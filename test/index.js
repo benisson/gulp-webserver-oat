@@ -5,7 +5,7 @@ var File = require('gulp-util').File;
 // Some configuration to enable https testing
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-describe('gulp-webserver', function() {
+describe('gulp-webserver-oat', function() {
 
   var stream;
   var proxyStream;

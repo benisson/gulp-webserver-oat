@@ -1,4 +1,4 @@
-gulp-webserver [![Build Status](http://img.shields.io/travis/schickling/gulp-webserver.svg?style=flat)](https://travis-ci.org/schickling/gulp-webserver) [![](http://img.shields.io/npm/dm/gulp-webserver.svg?style=flat)](https://www.npmjs.org/package/gulp-webserver) [![](http://img.shields.io/npm/v/gulp-webserver.svg?style=flat)](https://www.npmjs.org/package/gulp-webserver)
+gulp-webserver-oat [![Build Status](http://img.shields.io/travis/schickling/gulp-webserver-oat.svg?style=flat)](https://travis-ci.org/schickling/gulp-webserver-oat) [![](http://img.shields.io/npm/dm/gulp-webserver-oat.svg?style=flat)](https://www.npmjs.org/package/gulp-webserver-oat) [![](http://img.shields.io/npm/v/gulp-webserver-oat.svg?style=flat)](https://www.npmjs.org/package/gulp-webserver-oat)
 ==============
 
 > Streaming gulp plugin to run a local webserver with LiveReload
@@ -8,7 +8,7 @@ gulp-webserver [![Build Status](http://img.shields.io/travis/schickling/gulp-web
 ## Install
 
 ```sh
-$ npm install --save-dev gulp-webserver
+$ npm install --save-dev gulp-webserver-oat
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ The `gulp.src('root')` parameter is the root directory of the webserver. Multipl
 
 ```js
 var gulp = require('gulp');
-var webserver = require('gulp-webserver');
+var webserver = require('gulp-webserver-oat');
 
 gulp.task('webserver', function() {
   gulp.src('app')
@@ -40,7 +40,7 @@ Key | Type | Default | Description |
 `directoryListing` | Boolean/Object | `false` | whether to display a directory listing. For advanced options, provide an object with the 'enable' property set to true. You can use the 'path' property to set a custom path or the 'options' property to set custom [serve-index](https://github.com/expressjs/serve-index) options.
 `fallback` | String | `undefined` | file to fall back to (relative to webserver root)
 `open` | Boolean/String | `false` | open the localhost server in the browser. By providing a String you can specify the path to open (for complete path, use the complete url `http://my-server:8080/public/`) .
-`https` | Boolean/Object | `false` | whether to use https or not. By default, `gulp-webserver` provides you with a development certificate but you remain free to specify a path for your key and certificate by providing an object like this one: `{key: 'path/to/key.pem', cert: 'path/to/cert.pem'}`.
+`https` | Boolean/Object | `false` | whether to use https or not. By default, `gulp-webserver-oat` provides you with a development certificate but you remain free to specify a path for your key and certificate by providing an object like this one: `{key: 'path/to/key.pem', cert: 'path/to/cert.pem'}`.
 `middleware` | Function/Array | `[]` | a connect middleware function or a list of middleware functions
 `proxies` | Array | `[]`| a list of proxy objects.  Each proxy object can be specified by `{source: '/abc', target: 'http://localhost:8080/abc', options: {headers: {'ABC_HEADER': 'abc'}}}`.
 
